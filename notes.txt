@@ -1,0 +1,60 @@
+//build 3d studio max, export the model into an .obj format, then an obj importer (z and y are switched in studio)
+//
+
+glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+
+//display
+double fps = GetFramesPerSecond();
+double DT = 1.0 /fps;
+glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+//use current view
+if(current_view==perspective_view)
+	glEnable(GL_DEPTH_TEST);
+	glLoadIdentity();
+	         //perspective point, the center of scope, up direction
+	gluLookAt(-3,-3,7,  3,3,0,  0,0,1);
+	
+if(current_view == top_view)
+	glDisable(GL_DEPTH_TEST);
+	glLoadIdentity();
+
+
+
+if(current_view == rat_view)
+	glDisable(GL_DEPTH_TEST);
+	glLoadIdentity();
+	float z_level = .25;
+	x = rat.GetX()
+	y = rat.GetY
+	dx = rat.GetDX
+	dy = rat.GetDY
+	at_x = x+dx
+	at_y = y +dy
+	at_z = z_level;
+	gluLookAt(x,yx_level, at_x,at_y,at_z,
+	
+	
+void SetTopView(int w, int h)
+//go into 2d mode
+
+
+void SetPerspectiveView(int w, int h)
+	glMatrixMode
+	
+	
+//keyboard
+	case 'r':
+		current_view  = rat_view
+		SetPerspectiveView(screen_x,screen_y);
+		break;
+	case 't':
+	
+	
+//maze draw
+	if(current_view is top view)
+		glColor3fv(blackMaterial);
+	else
+		glBegin(GL_QUADS);
+		// draw hlines
+		for(y=0; y<=height
