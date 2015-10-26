@@ -1,5 +1,5 @@
 # 3d-maze
-A random 3d maze with a rat to control through it done in C++ and Glut
+A random 3d maze generator. You move a rat around to escape the maze. Done in C++ and Glut
 
 #Screenshots
 A top view perspective. </br>
